@@ -7,6 +7,10 @@ const User = mongoose.model('User', {
         required: true,
         index: true
     },
+    isAdmin: {
+        type: Boolean,
+        default: false
+    },
     name: {
         type: String
     }
